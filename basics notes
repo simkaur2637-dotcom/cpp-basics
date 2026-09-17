@@ -1,0 +1,106 @@
+1. Introduction to C++
+
+C++ is a general-purpose, object-oriented programming language developed by Bjarne Stroustrup. 
+It was developed as an extension of the C language and provides features such as procedural programming, 
+object-oriented programming, and generic programming. C++ is widely used for developing software applications,
+games, operating systems, embedded systems, and competitive programming because it is fast and provides direct control over memory.
+
+2. Structure of a C++ Program
+
+A basic C++ program usually contains header files, the main() function, declarations, and statements. 
+Header files provide predefined functions and features that can be used in a program. The main() function is
+the starting point of every C++ program because execution begins from there. Statements inside main() are executed one by one. For example, #include <iostream> includes the input-output library, and using namespace std; allows us to use standard C++ features such as cout and cin without writing std:: repeatedly.
+
+3. Comments in C++
+
+Comments are notes written inside a program to explain the code. 
+They are ignored by the compiler and do not affect program execution. 
+C++ supports two types of comments: single-line comments and multi-line comments.
+A single-line comment starts with //, while a multi-line comment is written between /* and */. Comments make programs easier to understand and maintain.
+
+4. Variables
+
+A variable is a named memory location used to store data that can change during program execution.
+Every variable has a data type that determines what kind of value it can store. For example, int age = 19; creates an integer variable named age. A variable should generally be declared before it is used. Variables can be changed during execution by assigning a new value to them.
+
+5. Constants
+
+A constant is a value that cannot be changed after it has been defined. In C++,
+the const keyword is used to create constants. For example, const int x = 10; means that
+the value of x cannot be changed later in the program. Constants are useful when a particular value should remain fixed throughout the program.
+
+6. Data Types
+
+Data types specify the type of data that a variable can store. Common C++ data types include int for whole numbers, 
+float for decimal numbers, double for more precise decimal values, char for a single character, bool for true or false values,
+and string for a sequence of characters. For example, int marks = 90, double price = 99.50, char grade = 'A', and bool passed = true use different data types according to the values they store.
+
+7. Input and Output
+
+C++ uses cout to display output on the screen and cin to take input from the user. 
+The insertion operator << is used with cout, while the extraction operator >> is used with cin. 
+For example, cout << "Hello"; displays Hello, while cin >> age; takes an integer input and stores it in the variable age. The iostream header file is required for these operations.
+
+8. Operators
+
+Operators are symbols used to perform operations on values and variables. 
+C++ has several types of operators. Arithmetic operators such as +, -, *, /, and % perform mathematical calculations. 
+Relational operators such as >, <, >=, <=, ==, and != compare values. Logical operators such as &&, ||, and ! are used to combine or reverse conditions. Assignment operators such as =, +=, -=, *=, and /= are used to assign or update values. Increment ++ and decrement -- operators increase or decrease a value by one.
+
+9. Conditional Statements
+
+Conditional statements allow a program to make decisions based on conditions. 
+The most common conditional statements are if, if-else, and else-if.
+The if statement executes a block of code when a condition is true. The if-else statement provides two possible paths, one for a true condition and another for a false condition. An else-if ladder is used when multiple conditions need to be checked. C++ also provides the switch statement for selecting one option from multiple cases.
+
+10. Loops
+
+Loops are used to execute a block of code repeatedly. C++ mainly provides three loops: for, while, and do-while. A for loop is generally used when the number of repetitions is known. A while loop executes as long as its condition remains true. A do-while loop executes the block at least once because the condition is checked after the execution of the loop body. Loops reduce code repetition and make programs more efficient.
+
+11. Break and Continue
+
+The break and continue statements are used to control loops. The break statement immediately terminates the loop and moves program execution outside the loop. The continue statement skips the current iteration and moves to the next iteration. For example, break can be used when a required value is found, while continue can be used to skip certain values.
+
+12. Arrays
+
+An array is a collection of elements of the same data type stored under one name. Arrays have a fixed size and use indexes to access individual elements. In C++, array indexing starts from 0, so the first element is at index 0. For example, int marks[5] = {80, 70, 90, 85, 75}; creates an array containing five integers. Arrays are useful when multiple related values need to be stored and processed.
+
+13. Strings
+
+A string is a sequence of characters used to store text. C++ provides the string data type through the <string> library. For example, string name = "Simran"; stores a person's name. Strings can be combined, compared, and modified using different functions and operators. Common string functions include length(), size(), substr(), and find().
+
+14. Functions
+
+A function is a reusable block of code designed to perform a specific task. Functions help divide a large program into smaller and manageable parts. A function can accept input through parameters and can return a value using the return statement. A function generally consists of a return type, function name, parameters, and function body. Functions improve code reusability, readability, and organization.
+
+15. Pointers
+
+A pointer is a variable that stores the memory address of another variable. Pointers are an important feature of C++ because they allow direct memory access and are widely used with arrays, dynamic memory, and data structures. The & operator is used to obtain the address of a variable, while the * operator is used to access the value stored at the address. For example, if int x = 10;, then int *p = &x; stores the address of x in pointer p.
+
+16. References
+
+A reference is another name or alias for an existing variable. It is created using the & symbol. For example, int x = 10; int &ref = x; means ref refers to the same memory location as x. Changes made through the reference also affect the original variable. References are commonly used in functions to modify original values without making a copy.
+
+17. Structures
+
+A structure is a user-defined data type that allows different types of data to be grouped together under one name. Structures are created using the struct keyword. For example, a student structure can contain a name, roll number, and marks. Structures are useful when related information of different data types needs to be stored together.
+
+18. Dynamic Memory Allocation
+
+Dynamic memory allocation allows memory to be allocated during program execution instead of fixing the memory size beforehand. C++ provides new to allocate memory dynamically and delete to release dynamically allocated memory. Dynamic memory is useful when the required amount of memory is not known at compile time. In modern C++, smart pointers are generally preferred for safer memory management.
+
+19. Object-Oriented Programming
+
+C++ supports Object-Oriented Programming (OOP), which organizes programs around objects and classes. The major concepts of OOP are class, object, encapsulation, inheritance, polymorphism, and abstraction. A class is a blueprint that defines data and functions, while an object is an instance of a class. OOP helps create programs that are reusable, organized, and easier to maintain.
+
+20. Exception Handling
+
+Exception handling is used to handle unexpected situations or errors during program execution. C++ provides try, catch, and throw keywords for exception handling. Code that may generate an exception is placed inside a try block, and the corresponding error is handled inside a catch block. This helps prevent abnormal program termination and allows errors to be handled properly.
+
+21. STL in C++
+
+The Standard Template Library (STL) is an important part of C++ that provides ready-made data structures and algorithms. Common STL containers include vector, stack, queue, deque, set, and map. STL also provides algorithms such as sort(), reverse(), find(), and max(). STL is especially important in DSA and competitive programming because it reduces the amount of code required to implement common operations.
+
+22. Compilation and Execution
+
+A C++ program is written in a source file, usually with the .cpp extension. The compiler converts the source code into machine-readable code and reports errors if the program contains invalid syntax or other compilation problems. After successful compilation, the generated program can be executed. A common compiler for C++ is GCC/G++.
